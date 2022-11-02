@@ -1,4 +1,5 @@
 function prime(num){
+
 	let factor=0;
 	for(i=1;i<num;i++){
 		if(num%i){
@@ -7,9 +8,6 @@ function prime(num){
 	}
 	return factor;
 }
-
-
-
 let ans=prime(12)
 if(ans==2){
 			console.log("its prime number");

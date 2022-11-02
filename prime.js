@@ -1,22 +1,17 @@
 function prime(num){
-	let count=0;
+
+	let factor=0;
 	for(i=1;i<num;i++){
-		if(num%i==0){
-			count++;
+		if(num%i){
+		factor++;
 		}
 	}
-	if(count==2){
-		return true;
-	}else{
-		return false;
-	}
+	return factor;
 }
-
-let ans=prime(12);
-if(ans==true){
-	console.log("is prime number");
-
-}
-else{
-	console.log("is not prime number");
-}
+let ans=prime(12)
+if(ans==2){
+			console.log("its prime number");
+		}
+		else{
+			console.log("its not prime number");
+		}
